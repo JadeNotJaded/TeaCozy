@@ -8,11 +8,11 @@ body {
   font-size: 22px;
   color: Seashell;
   background-color: black;
-  text-align: center;
   opacity: 0.9;
+  text-align: center;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
 }
 
 .header {
@@ -105,17 +105,38 @@ body {
   width:1200px;
   background-image: url("../images/img-locations-background.jpg");
 }
-#locations .locationBoxes {
+.locationBoxes {
   display: flex;
   flex-direction: row;
   justify-content: center;
 
 }
-
-#locations .locationsBoxes .boxes {
+.boxes {
   width: 300px;
-  height: 300px;
+  height: 250px;
   margin: 15px 20px;
   background-color: Black;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#contact {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 200px;
+  position: absolute;
+  top: 2050px;
+  width: 100%;
+}
+#footer {
+  display: flex;
+  position: absolute;
+  top: 2250px;
+  width: 100%;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
