@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: Seashell;
+  background-color: black;
+  text-align: center;
+  opacity: 0.9;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  background-color: black;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:10px;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid Seashell;
+}
+
+.header img {
+  height: 50px;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: row;
+  text-decoration: underline;
+}
+.header a {
+  color: Seashell;
+  padding-right: 30px;
+}
+#mission {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  position: absolute;
+  top: 69px;
+}
+#mission .banner {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  z-index: 2;
+  width: 1200px;
+}
+#mission .banner h4, #mission .banner h2 {
+  padding: 0px;
+  margin: 10px;
+
+}
+#featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 850px;
+  width: 1000px;
+}
+#featured h4, #featured h2 {
+  padding: 10px;
+}
+
+#featured .teaTypes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#featured .teaTypes .tea {
+  padding: 15px;
+}
+ #featured .teaTypes .tea img {
+  width: 300px;
+  height: 200px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+#featured .teaTypes .tea h4{
+  padding: 0px;
+}
+#locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1550px;
+  height: 500px;
+  width:1200px;
+  background-image: url("../images/img-locations-background.jpg");
+}
+#locations .locationBoxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#locations .locationsBoxes .boxes {
+  width: 300px;
+  height: 300px;
+  margin: 15px 20px;
+  background-color: Black;
+  z-index: 2;
+}
